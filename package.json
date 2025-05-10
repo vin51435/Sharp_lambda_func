@@ -1,0 +1,22 @@
+{
+  "name": "image-compressor",
+  "version": "1.0.0",
+  "description": "ImageCompressor for AWS lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vin51435/Sharp_lambda_func.git"
+  },
+  "author": "Vinay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vin51435/Sharp_lambda_func/issues"
+  },
+  "homepage": "https://github.com/vin51435/Sharp_lambda_func#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.804.0"
+  }
+}
