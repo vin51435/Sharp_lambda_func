@@ -50,7 +50,11 @@ exports.handler = async (event) => {
                 },
             } = file;
 
-            let buffer = Buffer.from(fileBase64, 'base64');
+            const base64 = file.fileBase64.includes(';base64,')
+                ? file.fileBase64.split(';base64,').pop()
+                : file.fileBase64;
+
+            let buffer = Buffer.from(base64, 'base64');
 
             const inputMeta = await sharp(buffer).metadata();
 
